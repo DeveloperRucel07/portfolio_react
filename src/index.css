@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./src/assets/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./src/assets/fonts/roboto-mono-v31-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./src/assets/fonts/roboto-mono-v31-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./src/assets/fonts/roboto-mono-v31-latin-700.woff2') format('woff2');
+}
+
+@theme{
+  --color-bg-color: #211E30;
+  --color-primary: #A0AEF4;
+  --color-secondary: #FFFFFF;
+  --font-RobotoMono: 'Roboto Mono'
+}
+
+:root{
+  background-color: #211E30;
+  color: #A0AEF4;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto Mono', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-content{
+  position: sticky;
+  top: 0;
+}
+
