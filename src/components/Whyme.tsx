@@ -1,30 +1,67 @@
-import imageWhyme from '../assets/images/rucel_image_2.png'
+import imageWhyme from '../assets/images/rucel_image_2.png';
+import right from '../assets/icons/right.png';
+import right_down from '../assets/icons/down_right.png';
+import arrow_snake from '../assets/icons/arrow_snake.png';
+import left from '../assets/icons/left.png';
+import location from '../assets/icons/location.png';
+import relocated from '../assets/icons/relocated.png';
+import remote from '../assets/icons/remote.png';
 const Whyme = () => {
   return (
-    <section className='flex h-[600px] flex-col md:flex-row items-center justify-between gap-20 pt-10 mb-20 mt-5' id='why-me'>
-        <div className='hidden md:flex md:h-full md:w-[50%] items-center justify-center'>
+    <section className='flex  flex-col md:flex-row items-center justify-between gap-20 md:pt-30 mb-20 md:mt-20 mr-2 ml-2' id='why-me'>
+        <div className='hidden md:flex md:h-full md:w-[45%] items-center justify-center'>
             <img src={imageWhyme} alt="image rucel 2" className='object-cover w-[550px] h-[500px]'/>
         </div>
-        <div className='w-full md:w-[50%] flex flex-col'>
-            <h3 className='font-bold text-4xl md:text-[82px] text-secondary mt-5 mb-5 text-center  md:text-end'>Why me</h3>
-            <p className='text-center md:text-end mt-4 mb-5 p-2'>
+        <div className='w-full md:w-[55%] flex flex-col'>
+            <h3 className='font-bold text-5xl md:text-6xl lg:text-8xl text-secondary mt-5 mb-5 text-center  md:text-end md:pr-4'>Why me</h3>
+            <p className='text-center text-lg md:text-xl md:text-end mt-4 mb-5 p-2'>
                 Write some information about yourself that is IT related. Why are you passionate about coding? Highlight your 
                 motivation for professional growth and continuous learning. Emphasise your strong problem-solving skills and passion for coding.
             </p>
-            <div className='items-center flex flex-col'>
-                <h4 className='font-bold text-2xl md:text-[40px] text-secondary mt-5 mb-5'>I am</h4>
-                <p>located in Frankfurt</p>
-                <p>open to relocated</p>
-                <p>open to work remote</p>
+            <div className='flex md:hidden p-2'>
+                <img src={left} alt="" />
             </div>
-            <div className='flex items-center justify-center p-6'>
-                <a href='#contact' className='flex items-center justify-center w-[175px] h-10 border-2 border-secondary text-center bg-secondary text-xl font-bold' >
+            <div className='items-start flex flex-col text-lg md:text-xl md:flex-row justify-center gap-6 w-full'>
+                <h4 className='font-bold text-3xl md:text-5xl text-secondary mt-5 mb-5 w-50 text-center'>I am</h4>
+                <section className="situation flex flex-col w-full">
+                    <div className='flex flex-row items-center justify-start text-lg p-4 gap-4'>
+                        <img src={location} alt="location" />
+                        <p>located in Bad Segeberg</p>
+                    </div>
+                    <div className='md:flex hidden  items-start justify-start h-10'>
+                        <img className='h-15' src={left} alt="arrow left" />
+                    </div>
+                    <div className='flex flex-col  md:flex-row-reverse md:h-40 m-4'>
+                        <div className='relocation flex items-start justify-start h-full'>
+                            <div className='flex flex-row items-center justify-start text-lg pr-4 gap-4'>
+                                <img src={relocated} alt="relocation" />
+                                <p>open to relocated</p> 
+                            </div>
+                        </div>
+                        <div className="remote flex items-end justify-end h-full">
+                            <div className='flex flex-row items-center justify-center text-lg p-4 gap-4'>
+                                <img src={remote} alt="work remote" />
+                                <p>open to work remote</p>
+                            </div>
+                            <div className='md:flex hidden justofy-end items-end h-10'>
+                                <img className='h-15' src={right} alt="arrow snake" />
+                            </div>
+                        </div>
+                    </div>
+                        
+                </section>
+            </div>
+            <div className='md:flex hidden items-end justify-end h-10 '>
+                <img className='h-15' src={arrow_snake} alt="arrow down right" />
+            </div>
+            <div className='flex md:hidden items-end justify-end p-2 h-20'>
+                <img className='h-15' src={right_down} alt="" />
+            </div>
+            <div className='flex items-center justify-center md:justify-end md:pr-10 p-6 m-4'>
+                <a href='#contact' className='flex items-center justify-center w-[175px] h-12 border-2 border-secondary text-center bg-secondary text-md font-bold' >
                     Let's Talk
                 </a>
             </div>
-
-            
-
         </div>
     </section>
   )
