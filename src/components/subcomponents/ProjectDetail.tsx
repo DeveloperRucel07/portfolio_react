@@ -11,7 +11,7 @@ const ProjectDetail = () => {
                 </a>
 
                 <a href='#contact' className='flex items-center justify-center w-30 h-12 border-2 border-primary text-center bg-primary text-md font-bold text-bg-color' >
-                    Let's Talk
+                    Live Test
                 </a> 
             </div>
         </div>
