@@ -13,9 +13,9 @@ const Landing = () => {
                 </div>
 
                 <div className='flex items-end justify-center h-full '>
-                    <button className='animate-bounce duration-150 go-down focus:outline-2 focus:outline-offset-2 active:bg-primary hover:border-2 border-secondary  h-[175px] w-15'>
+                    <button className='animate-bounce duration-150 go-down focus:outline-2 focus:outline-offset-2  h-[150px] w-10'>
                         <a href='#why-me' >
-                            <img className='w-20 h-30' src={downPrimary} alt="down" />
+                            <img className='w-10 h-15' src={downPrimary} alt="down" />
                         </a>
                     </button>
                     

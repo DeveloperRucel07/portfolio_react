@@ -21,11 +21,11 @@ const Header = () => {
                 <li className='text-lg md:text-xl xl:text-2xl'><a href="#contact" className='hover:text-secondary'>Contact</a></li>
             </ul>
             <div className=' flex gap-2 items-center justify-center text-xl px-4'>
-                <span className='hover:text-secondary'>DE</span>
+                <span className='hover:text-secondary' tabIndex={0}>DE</span>
                 |
-                <span className='hover:text-secondary'>EN</span>
+                <span className='hover:text-secondary' tabIndex={0}>EN</span>
                 |
-                <span className='hover:text-secondary'>FR</span>
+                <span className='hover:text-secondary' tabIndex={0}>FR</span>
             </div> 
         </nav>
         

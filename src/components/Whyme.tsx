@@ -8,7 +8,7 @@ import relocated from '../assets/icons/relocated.png';
 import remote from '../assets/icons/remote.png';
 const Whyme = () => {
   return (
-    <section className='flex  flex-col md:flex-row items-center justify-between gap-20 md:pt-30 mb-20 md:mt-20 mr-2 ml-2' id='why-me'>
+    <section className='flex  flex-col md:flex-row items-center justify-between gap-20 md:pt-20 mb-20 md:mt-20 mr-2 ml-2' id='why-me'>
         <div className='hidden md:flex md:h-full md:w-[45%] items-center justify-center'>
             <img src={imageWhyme} alt="image rucel 2" className='object-cover w-[550px] h-[500px]'/>
         </div>
@@ -57,7 +57,7 @@ const Whyme = () => {
             <div className='flex md:hidden items-end justify-end p-2 h-20'>
                 <img className='h-15' src={right_down} alt="" />
             </div>
-            <div className='flex items-center justify-center md:justify-end md:pr-10 p-6 m-4'>
+            <div className='flex items-center justify-center md:justify-end md:pr-10 p-4 m-4'>
                 <a href='#contact' className='flex items-center justify-center w-[175px] h-12 border-2 border-secondary text-center bg-secondary text-md font-bold' >
                     Let's Talk
                 </a>

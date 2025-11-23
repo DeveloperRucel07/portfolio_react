@@ -1,6 +1,10 @@
+import ContactMe from "./ContactMe"
+import Footer from "./Footer"
 import Header from "./Header"
 import Landing from "./Landing"
+import ProjectList from "./ProjectList"
 import Skills from "./Skills"
+import Teamplayer from "./Teamplayer"
 import Whyme from "./Whyme"
 
 const App = () => {
@@ -13,7 +17,11 @@ const App = () => {
         <Landing></Landing>
         <Whyme></Whyme>
         <Skills></Skills>
+        <ProjectList></ProjectList>
+        <Teamplayer></Teamplayer>
+        <ContactMe></ContactMe>
       </main>
+      <Footer></Footer>
     </>
   )
 } 
