@@ -2,7 +2,7 @@
 
 const Testimoni = () => {
   return (
-    <div className='flex flex-col justify-center items-center md:justify-start md:items-start border-secondary border md:border-none p-2 m-2'>
+    <div className='flex flex-col justify-start items-start border-secondary border md:border-none p-2 m-2 snap-start min-w-[310px] max-h-80'>
         <h4 className=' text-primary text-xl font-extrabold '>
             Tino Wolf
         </h4>
