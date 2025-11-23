@@ -18,7 +18,7 @@
   background-color: #a0aef4;
   margin: 3px 0;
   border-radius: 2px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .burger span.open:nth-child(1) {
@@ -31,7 +31,10 @@
   transform: rotate(-45deg) translateY(-12px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+  .header-content{
+    justify-content: space-between;
+  }
   .burger {
     display: flex;
   }
@@ -45,6 +48,12 @@
     position: absolute;
     flex-direction: column;
     align-items: center;
+    animation: all 300ms ease-in-out;
+  }
+
+  .hide_nav{
+    display: none !important;
+    animation: all 300ms ease-in-out;
   }
 
   .nav-items ul {
@@ -52,5 +61,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: all 300ms ease-in-out;
   }
 }
