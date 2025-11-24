@@ -48,12 +48,12 @@
     position: absolute;
     flex-direction: column;
     align-items: center;
-    animation: all 300ms ease-in-out;
+    animation: slideInLeft 300ms ease-in-out;
   }
 
   .hide_nav{
     display: none !important;
-    animation: all 300ms ease-in-out;
+    animation: slideInLeft 300ms ease-in-out;
   }
 
   .nav-items ul {
@@ -61,6 +61,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: all 300ms ease-in-out;
+
   }
 }
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
