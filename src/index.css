@@ -5,7 +5,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('./src/assets/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
+  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 500;
-  src: url('./src/assets/fonts/roboto-mono-v31-latin-500.woff2') format('woff2');
+  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 600;
-  src: url('./src/assets/fonts/roboto-mono-v31-latin-600.woff2') format('woff2');
+  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,14 +29,15 @@
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 700;
-  src: url('./src/assets/fonts/roboto-mono-v31-latin-700.woff2') format('woff2');
+  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-700.woff2') format('woff2');
 }
 
 @theme{
   --color-bg-color: #211E30;
   --color-primary: #A0AEF4;
   --color-secondary: #FFFFFF;
-  --font-RobotoMono: 'Roboto Mono'
+  --font-RobotoMono: 'Roboto Mono';
+  --color-error:#E15544;
 }
 
 :root{
