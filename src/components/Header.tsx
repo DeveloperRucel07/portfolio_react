@@ -16,7 +16,7 @@ const Header = () => {
             <span className={isOpen ? "menuOpen open" : "menuOpen"}></span>
         </button>
         
-        <nav id="main-navigation" className={`nav-items ${isOpen ? "flex mt-2 p-12 rounded-b-3xl ease-out bg-bg-color" : "hide_nav hidden ease-in-out"} md:bg-none  md:flex flex-col justify-start items-center md:flex-row md:items-center md:justify-between gap-8 w-full h-85 md:h-10 top-0 md:pl-4 md:pr-4 animate-all duration-300`}>
+        <nav id="main-navigation" className={`nav-items ${isOpen ? "flex mt-2 p-12 rounded-b-3xl ease-out bg-bg-color" : "hide_nav ease-in-out"} md:bg-none  md:flex flex-col justify-start items-center md:flex-row md:items-center md:justify-between gap-8 w-full h-85 md:h-10 top-0 md:pl-4 md:pr-4 animate-all duration-300`}>
             <ul className='flex gap-8 flex-col md:flex-row items-center justify-center'>
                 <li className='text-lg md:text-xl xl:text-2xl'><a href="#why-me" className='hover:text-secondary' onClick={() => setIsOpen(false)}>Why me</a></li>
                 <li className=' text-lg md:text-xl xl:text-2xl'><a href="#skills" className='hover:text-secondary' onClick={() => setIsOpen(false)}>Skills</a></li>

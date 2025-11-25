@@ -84,12 +84,17 @@ const ContactForm = () => {
       <div className="privacy flex flex-col justify-between w-full pt-4 gap-6">
         <div className="flex flex-col items-start justify-start w-full">
           <div className="flex flex-row items-center justify-start w-full">
-            <input type="checkbox" id="agree"
-            {...register("agree",{
-              required:true
-            })}
-            
-            />
+
+            <label className="flex flex-row neon-checkbox gap-2" >
+                    <input type="checkbox" 
+                        id="agree"
+                        {...register("agree",{
+                          required:true
+                        })}
+                    />
+                    <span className={`checkmark ${errors.agree ? 'outlined-error border-2 border-error' : ''}`} tabIndex={0}></span>
+            </label>
+
             <p>I've read <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
           </div>
           {errors.agree && <p className="text-sm text-error">{errors.agree?.message}</p>}

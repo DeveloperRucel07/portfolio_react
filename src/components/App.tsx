@@ -13,7 +13,7 @@ const App = () => {
       <header className="relative w-full items-center h-20 justify-center">
         <Header></Header>
       </header>
-      <main className="pr-2 pl-2" >
+      <main className="" >
         <Landing></Landing>
         <Whyme></Whyme>
         <Skills></Skills>
