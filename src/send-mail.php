@@ -12,15 +12,15 @@ switch ($_SERVER['REQUEST_METHOD']) {
             // is send to php:input as a text
             $json = file_get_contents('php://input');
             //parse the Payload from text format to Object
-            $params = json_decode($json, true);
+            $params = json_decode($json);
     
-            $email = $json['emailUser'];
+            $email = $params->emailUser;
             $name = $params->nameUser;
             $message = $params->messageUser;
     
             $recipient = 'cybercorps237@gmail.com';  
             $subject = "Contact From <$email>";
-            $message = "From: " . $name . "<br>" . "Email: " . $email . "<br> " .  $message. ' '. $json['emailUser'];
+            $message = "From: " . $name . "<br>" . "Email: " . $email . "<br> " .  $message;
     
             $headers   = array();
             $headers[] = 'MIME-Version: 1.0';

@@ -45,7 +45,7 @@ const ContactForm = () => {
   const onSubmit : SubmitHandler<Contacted> = async (data) =>{
     console.log(data);
     try{
-      const response = await fetch('https://developer-rucel.com/sendMail.php', {
+      const response = await fetch('https://developer-rucel.com/send-mail.php', {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=UTF-8",
@@ -53,7 +53,7 @@ const ContactForm = () => {
         body: JSON.stringify(data),
       });
       const textResponse = await response.text();
-      console.log("Server response:",response.status, textResponse);
+      console.log("Server response:",response.status);
       if (!response.ok) {
         throw new Error(`Server returned ${response.status}: ${textResponse}`);
       }
