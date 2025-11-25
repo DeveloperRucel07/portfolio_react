@@ -1,5 +1,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import {z} from 'zod';
 
@@ -34,15 +35,36 @@ const contactedSchema = z.object({
 type Contacted  = z.infer<typeof contactedSchema>
 
 const ContactForm = () => {
-  const {register  , handleSubmit, formState:{errors, isValid}} = useForm<Contacted>({
+  const {register  , handleSubmit, formState:{errors, isValid}, reset:resetForm} = useForm<Contacted>({
     resolver: zodResolver(contactedSchema),
     mode: "onTouched",
     reValidateMode: "onChange",
   });
+  const [submitting, setSubmitting] = useState(false);
 
   const onSubmit : SubmitHandler<Contacted> = async (data) =>{
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(data)
+    console.log(data);
+    try{
+      const response = await fetch('https://developer-rucel.com/sendMail.php', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",
+        },
+        body: JSON.stringify(data),
+      });
+      const textResponse = await response.text();
+      console.log("Server response:",response.status, textResponse);
+      if (!response.ok) {
+        throw new Error(`Server returned ${response.status}: ${textResponse}`);
+      }
+      setSubmitting(true);
+        setTimeout(() => {
+          setSubmitting(false);
+        }, 2000);
+      resetForm();
+    }catch(error){
+      console.error(error)
+    }
     
   }
 
@@ -99,7 +121,13 @@ const ContactForm = () => {
           </div>
           {errors.agree && <p className="text-sm text-error">{errors.agree?.message}</p>}
         </div>
-        <div className="flex flex-row items-end justify-end w-full">
+        <div className="flex flex-col justify-center md:flex-row items-center md:justify-between w-full">
+          <div className=''>
+            <p className={`${submitting ? 'text-secondary text-xl': 'hidden'}`}>
+              We have receive your email.
+            </p>
+            
+          </div>
           <button type="submit" className={`flex items-center justify-center border-2 ${!isValid? ' border-gray-600 text-gray-600': 'border-secondary text-secondary'} w-32 h-12 `} disabled = {!isValid}>
             Send
           </button>

@@ -1,36 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import "tailwindcss";
-
-@font-face {
-  font-display: swap; 
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 500;
-  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-500.woff2') format('woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 600;
-  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-600.woff2') format('woff2');
-}
-
-@font-face {
-  font-display: swap; 
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://developer-rucel.com/fonts/roboto-mono-v31-latin-700.woff2') format('woff2');
-}
 
 @theme{
   --color-bg-color: #211E30;

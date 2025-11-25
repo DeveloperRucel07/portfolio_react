@@ -49,7 +49,7 @@ const ProjectList = () => {
         <h3 className="font-bold text-5xl md:text-6xl lg:text-8xl text-secondary mt-5 mb-5 text-center">
             My Projects
         </h3>
-        <div className="flex flex-col w-full gap-12 p-2 items-center justify-center">
+        <div className="flex flex-col w-full gap-12 pr-3 items-center justify-center">
           {projectLists.map((project, index) =>(
             <ProjectDetail
             key={index}

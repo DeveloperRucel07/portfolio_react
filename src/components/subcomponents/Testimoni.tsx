@@ -6,7 +6,7 @@ type TestimoniProps = {
 
 const Testimoni = ({testimoni}:TestimoniProps) => {
   return (
-    <div className='flex flex-col justify-start items-start border-secondary border md:border-none p-2 m-2 snap-start min-w-[310px] h-45 max-h-50'>
+    <div className='flex flex-col justify-start items-start border-secondary border md:border-none p-2 m-2 snap-start min-w-[310px] h-50'>
         <h4 className=' text-primary text-xl font-extrabold '>
             {testimoni.developer}
         </h4>
