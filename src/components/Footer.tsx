@@ -1,4 +1,5 @@
-import logo_primary from '../assets/images/logo_primary.png'
+import { Link } from 'react-router-dom'
+import logo_primary from '../assets/images/logo_blue.png'
 import SocialMediaLink from './subcomponents/SocialMediaLink'
 
 const Footer = () => {
@@ -14,8 +15,8 @@ const Footer = () => {
             &copy; Rucel Tsafack 2025
           </h4>
           <div className='flex gap-2 text-primary flex-col md:flex-row'>
-            <a href="" className='text-md font-medium hover:text-secondary focus:underline focus:font-bold focus:text-secondary'>Legal notice</a>
-            <a href="" className='text-md font-medium hover:text-secondary focus:underline focus:font-bold focus:text-secondary'>Privacy policy</a>
+            <Link to="/legal-notice" className='text-md font-medium hover:text-secondary focus:underline focus:font-bold focus:text-secondary'>Legal notice</Link>
+            <Link to="/privacy-policy" className='text-md font-medium hover:text-secondary focus:underline focus:font-bold focus:text-secondary'>Privacy policy</Link>
           </div>
         </div>
       </section>

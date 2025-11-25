@@ -4,7 +4,7 @@ import ContactForm from './subcomponents/ContactForm';
 import ContactLink from './subcomponents/ContactLink';
 const ContactMe = () => {
   return (
-    <div className='flex  flex-col items-start justify-between gap-20 md:pt-10 mb-10 md:mt-10 mr-2 ml-2' id='contact'>
+    <div className='flex  flex-col items-start justify-between gap-10 md:pt-10 mb-10 md:mt-10 mr-2 ml-2' id='contact'>
         <h3 className='flex font-bold text-5xl md:text-6xl lg:text-8xl text-secondary mt-5 mb-5 text-center  md:text-start items-center'>
             Contact me 
             <img className='flex w-20 h-10 items-end' src={contact_corner} alt="contact corner" />
