@@ -12,6 +12,7 @@
     "whyme":{
         "whyme": "Warum ich",
         "aboutme": "Als Frontend-Entwickler schreibe ich sauberen, effizienten Code. Ich habe ein ausgeprägtes Gespür für Benutzerfreundlichkeit und eine ausgeprägte Teamorientierung. Mir ist es wichtig, intuitive und ansprechende Benutzeroberflächen zu entwickeln, und ich liefere stets qualitativ hochwertige Arbeit zuverlässig und professionell. Ich bin motiviert, detailorientiert und freue mich immer darauf, mich in neue Projekte einzubringen.",
+        "new_skill":"Ich lerne immer gerne neue Technologien kennen. Sagen Sie mir einfach, welche Technologien ich für unser zukünftiges Projekt beherrschen sollte.",
         "me": "Ich bin",
         "location": "befinde mich in Bad Segeberg.",
         "relocation": "offen für einen Umzug.",
@@ -19,13 +20,15 @@
     },
     "projects":{
         "description_join": "Task manager, inspiriert vom Kanban-System. Aufgaben per Drag & Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.",
-        "description_sharkie": "Ein simples Jump-’n’-Run-Spiel, basierend auf objektorientierter Programmierung. Hilf Sharkie, die Münzen und Giftflaschen zu finden, um den Killerwal zu       bekämpfen und den Ozean zu schützen.",
+        "description_sharkie": "Ein simples Jump-’n’-Run-Spiel, basierend auf objektorientierter Programmierung. Hilf Sharkie, die Münzen und Giftflaschen zu finden, um den Killerwal zu bekämpfen und den Ozean zu schützen.",
         "description_shopdev": "Ein vollständiger E-Commerce-Shop mit Authentifizierung, Echtzeitdatenbank und sicherer Zahlungsabwicklung."
     },
     "teamplayer":{
+        "need":"Sie brauchen einen Teamplayer?",
+        "team_saying":" Hier ist, was meine Kollegen über mich sagen.",
         "message_1": "‘’Die Zusammenarbeit mit dir war mir eine Ehre. Deine Fähigkeit, komplexe Probleme in klare, umsetzbare Lösungen zu zerlegen, bewundere ich sehr. Du bringst stets positive Energie und Professionalität ins Team ein.‘’",
         "message_2": "‘’Vielen Dank, dass du als Entwickler stets hilfsbereit bist und andere unterstützen. Ob Code-Reviews, Brainstorming oder Mentoring, du zeigst dich immer offen und engagiert.‘’",
-        "message_3":"‘’Du gehörst zu den Entwicklern, die nicht nur exzellenten Code schreiben, sondern auch alle um sich herum inspirieren. Deine Hilfsbereitschaft, dein Verständnis für Sachverhalte und deine Kooperationsbereitschaft tragen zu einem reibungsloseren Arbeitsablauf bei.‘’"
+        "message_3":"‘’Du inspiriere alle um sich herum. Deine Hilfsbereitschaft, dein Verständnis für Sachverhalte und deine Kooperationsbereitschaft tragen zu einem reibungsloseren Arbeitsablauf bei.‘’"
     },
     "contact":{
         "contact":"Kontakt",
@@ -34,5 +37,57 @@
         "privacy_p" : " und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "privacy_link": "Datenschutzrichtlinie",
         "send_success": "Vielen Dank für Ihre Nachricht, wir haben Ihre E-Mail erhalten."
+    },
+    "footer":{
+        "role": "Frontend Entwickler",
+        "legacy": "Impressum",
+        "privacy":"Datenschutzrichtlinie"
+    },
+    "legacy":{
+        "start": "Impressum",
+        
+        "accept_terms":{
+            "title": "Haftungsausschluss",
+            "content": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden."
+        },
+        "ownership":{
+            "title": "Externe Links:",
+            "content": "Diese Website enthält Links zu externen Webseiten Dritter. Auf die Inhalte dieser Seiten haben wir keinen Einfluss. Daher können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Die jeweiligen Anbieter oder Betreiber der Seiten sind stets für die Inhalte verantwortlich."
+            
+        },
+        "proprietary":{
+            "title": "Urheberrecht",
+            "content": " Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+        },
+        "use_product":{
+            "title": "Verwendung des Produkts",
+            "content_1": "Abgesehen vom Design, das der ",
+            "content_2": "gehört, behalten wir, die aufgeführten Studierenden, alle Eigentumsrechte am Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen geschützten Informationen. "
+        }
+    },
+    "privacy":{
+        "title":"Datenschutzrichtlinie",
+        "start": "Kontaktinformationen",
+        "board": "Erkundigung des Boards",
+        "data_collection":{
+            "title": "Datenerfassung und -nutzung",
+            "content_1":" Wir erfassen personenbezogene Daten, die Sie uns freiwillig übermitteln, wenn Sie uns per E-Mail kontaktieren. Zu diesen Daten können Ihr Name, Ihre E-Mail-Adresse und alle weiteren Angaben gehören, die Sie uns mitteilen möchten. ",
+            "content_2":" Die erhobenen Daten werden ausschließlich dazu verwendet, Ihre Anfragen zu beantworten und Ihnen die angeforderten Informationen oder Dienstleistungen bereitzustellen. Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, verkaufen oder verbreiten sie nicht."
+        },
+        "right_protection":{
+            "title": "Ihre Datenschutzrechte",
+            "content": "Sie haben das Recht, Ihre bei uns gespeicherten personenbezogenen Daten einzusehen, zu berichtigen oder zu löschen. Sie können Ihre Einwilligung zur Verarbeitung Ihrer Daten jederzeit widerrufen. Um diese Rechte auszuüben, kontaktieren Sie uns bitte unter"
+        },
+        "cookies":{
+            "content": "Diese Website verwendet weder Cookies noch andere Tracking-Technologien."
+        },
+        "change_policy":{
+            "title":" Änderungen dieser Datenschutzrichtlinie ",
+            "content": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Alle Änderungen werden auf dieser Seite mit dem aktualisierten Datum der letzten Überarbeitung veröffentlicht. Wir empfehlen Ihnen, diese Richtlinie regelmäßig zu überprüfen, um sich darüber zu informieren, wie wir Ihre Daten schützen."
+        },
+        "update":{
+            "title": "Gültigkeitsdatum",
+            "content": "Diese Datenschutzrichtlinie tritt am 01. Dezember 2025 in Kraft."
+        }
     }
 }

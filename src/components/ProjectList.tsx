@@ -1,6 +1,7 @@
 import ProjectDetail from "./subcomponents/ProjectDetail";
 import project_join from '../assets/images/project_join.png';
 import project_sharkie from '../assets/images/project_sharkie.png';
+import project_shopdev from '../assets/images/project_shopdev.png';
 import { useTranslation } from "react-i18next"
 
 export type Project ={
@@ -36,7 +37,7 @@ const ProjectList = () => {
       title: "ShopDev",
       technologie: ["Angular", "TypeScript", "Tailwind CSS", "Material Design", "SCSS"],
       about:t("projects.description_shopdev"),
-      imageUrl: project_join,
+      imageUrl: project_shopdev,
       gitGubLink: "https://github.com/DeveloperRucel07/shopdev",
       projectLink: "https://shopdev.rucel-tsafack.com/index.html",
     },

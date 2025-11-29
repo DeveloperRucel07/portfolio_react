@@ -12,7 +12,7 @@ const ProjectDetail = ( {index, project}: ProjectDetailProps) => {
 
   return (
     <div className={`flex flex-col-reverse ${isEven(index) ? 'md:flex-row': 'md:flex-row-reverse'}  items-center justify-center w-full md:h-80 gap-6`}>
-        <div className="flex items-center flex-col justify-center h-full md:w-[50%]">
+        <div className="flex items-center flex-col justify-center h-full w-full md:w-[45%]">
             <img className='object-cover h-full w-full rounded-md md:rounded-none' src={project.imageUrl} alt="image project" />
             <div className='flex flex-row items-center justify-evenly w-full pt-4 md:hidden'>
                 <a href={project.gitGubLink} className='flex items-center justify-center w-25 h-12 border-2 border-secondary text-center bg-secondary text-md font-bold rounded-xl' >
@@ -24,7 +24,7 @@ const ProjectDetail = ( {index, project}: ProjectDetailProps) => {
                 </a> 
             </div>
         </div>
-        <div className="flex flex-col items-center justify-center h-full text-primary pt-2 pb-3">
+        <div className="flex flex-col items-center justify-center h-full text-primary pt-2 pb-3 w-full md:w-[55%]">
             <h4 className='font-bold text-3xl md:text-5xl text-primary mt-5 mb-5 w-50 text-center'>{project.title}</h4>
             <h5 className='text-center w-full pt-2 pb-3 text-xl'>
                 {project.technologie.join(" | ")}

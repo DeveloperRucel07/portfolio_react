@@ -12,7 +12,7 @@ const Whyme = () => {
   return (
     <section className='flex  flex-col md:flex-row items-center justify-between gap-20 md:pt-20 mb-20 md:mt-20 mr-2 ml-2' id='why-me'>
         <div className='hidden md:flex md:h-full md:w-[45%] items-center justify-center'>
-            <img src={imageWhyme} alt="image rucel 2" className='object-cover w-[550px] h-[500px]'/>
+            <img src={imageWhyme} alt="image rucel 2" className=' w-full h-full'/>
         </div>
         <div className='w-full md:w-[55%] flex flex-col'>
             <h3 className='font-bold text-5xl md:text-6xl lg:text-8xl text-secondary mt-5 mb-5 text-center  md:text-end md:pr-4'>{t('whyme.whyme')}</h3>

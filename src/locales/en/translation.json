@@ -12,6 +12,7 @@
     "whyme":{
         "whyme": "Why me",
         "aboutme": "As a frontend developer, I bring clean, efficient code, a strong eye for user experience, and a genuinely collaborative mindset. I care about building interfaces that feel intuitive and look polished, and I’m committed to delivering high-quality work with reliability and professionalism. I’m motivated, detail-oriented, and always ready to contribute to new projects",
+        "new_skill":"I am always happy to learn new technologies,just tell me which technology should i need to know for our future Project.",
         "me": "I am",
         "location": "located in Bad Segeberg",
         "relocation": "open to relocated",
@@ -23,6 +24,8 @@
         "description_shopdev": "A complete e-commerce store with authentication, real-time database, and secure payment integration."
     },
     "teamplayer":{
+        "need":"Need a teamplayer?",
+        "team_saying":" Here what my Colleagues said about me",
         "message_1": "‘’Working with you has been a privilege. You ability to break down complex problems into clear, actionable solutions is something I admire deeply. You always bring positivity and professionalism to the team‘’",
         "message_2": "‘’Thank you for being the kind of developer who never hesitates to support others. Whether it's reviewing code, brainstorming ideas, or mentoring, you always show up with openness and care.‘’",
         "message_3":"‘’You’re one of those developers who not only writes excellent code but also elevates everyone around you. Your willingness to help, explain, and collaborate makes our entire workflow smoother.‘’"
@@ -34,5 +37,54 @@
         "privacy_p" : "and agree to the processing of my data as outlined.",
         "privacy_link": "privacy policy",
         "send_success": "Thank you for your Message, We have received your email."
+    },
+    "footer":{
+        "role": "Frontend Developer",
+        "legacy": "Legal notice",
+        "privacy":"Privacy policy"
+    },
+    "legacy":{
+        "start": "Imprint",
+        
+        "accept_terms":{
+            "title": "Disclaimer",
+            "content": "The content of this website has been created with the utmost care. However, no guarantee can be given for the accuracy, completeness, and timeliness of the content."
+        },
+        "ownership":{
+            "title": "External links:",
+            "content": "This website contains links to external websites of third parties. We have no influence on the content of these sites. Therefore, we cannot assume any liability for this external content. The respective providers or operators of the linked sites are always responsible for their content."
+            
+        },
+        "proprietary":{
+            "title": "Copyright",
+            "content": " The content and works created by the website operators on these pages are subject to German copyright law. Reproduction, processing, distribution, and any form of exploitation beyond the limits of copyright law require the written consent of the respective author or creator."
+        }
+    },
+    "privacy":{
+        "title":"Privacy Policy",
+        "start": "Contact information",
+        "board": "Board inquiry ",
+        "data_collection":{
+            "title": "Data collection and use",
+            "content_1":" We collect personal data that you voluntarily provide when you contact us by email. This data may include your name, email address, and any other information you choose to share with us. ",
+            "content_2":" The data collected will be used exclusively to answer your inquiries and provide you with the requested information or services. We will not share, sell, or distribute your personal data to third parties."
+        },
+        "right_protection":{
+            "title": "Your data protection rights",
+            "content": "You have the right to access, correct, or delete your personal data stored by us. You can withdraw your consent to the processing of your data at any time. To exercise these rights, please contact us at"
+        },
+        "cookies":{
+            "content": "This website does not use cookies or other tracking technologies."
+        },
+        "change_policy":{
+            "title":" Changes to this privacy policy ",
+            "content": "We may update this privacy policy from time to time. All changes will be posted on this page with the updated date of the last revision. We encourage you to review this policy regularly to stay informed about how we protect your data."
+        },
+        "update":{
+            "title": "Validity date",
+            "content": "This privacy policy will come into effect on December 1, 2025."
+        }
     }
+
+
 }
