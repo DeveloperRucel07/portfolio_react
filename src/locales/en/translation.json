@@ -1,0 +1,20 @@
+{
+    "header": {
+        "whyme": "Why me",
+        "skills":"Skills",
+        "project": "Projects",
+        "contact":"Contact"
+    },
+    "landing": {
+        "contact": "Contact me",
+        "title": "Frontend Developer"
+    },
+    "whyme":{
+        "whyme": "Why me",
+        "aboutme": "Write some information about yourself that is IT related. Why are you passionate about coding? Highlight your motivation for professional growth and continuous learning. Emphasise your strong problem-solving skills and passion for coding.",
+        "me": "I am",
+        "location": "located in Bad Segeberg",
+        "relocation": "open to relocated",
+        "remote": "open to work remote"
+    }
+}

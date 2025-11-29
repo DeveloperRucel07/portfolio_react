@@ -1,0 +1,20 @@
+{
+    "header": {
+        "whyme": "Warum ich",
+        "skills":"Fähigkeit",
+        "project": "Projekte",
+        "contact":"Kontakt"
+    },
+    "landing": {
+        "contact": "Kontaktieren Sie mich",
+        "title": "Frontend Entwickler"
+    },
+    "whyme":{
+        "whyme": "Warum ich",
+        "aboutme": "Beschreiben Sie einige IT-bezogene Informationen über sich. Warum begeistert Sie das Programmieren? Beschreiben Sie Ihre Motivation für berufliche Weiterentwicklung und kontinuierliches Lernen. Betonen Sie Ihre ausgeprägten Problemlösungsfähigkeiten und Ihre Leidenschaft für das Programmieren.",
+        "me": "Ich bin",
+        "location": "befinde mich in Bad Segeberg.",
+        "relocation": "offen für einen Umzug.",
+        "remote": "offen für Remote-Arbeit."
+    }
+}
