@@ -12,6 +12,7 @@
     "whyme":{
         "whyme": "Pourquoi moi",
         "aboutme": "En tant que développeur front-end, je produis un code propre et performant. J'ai un sens aigu de l'ergonomie et je suis un collaborateur impliqué. Le développement d'interfaces utilisateur intuitives et attrayantes est primordial pour moi, et je fournis systématiquement un travail de haute qualité, de manière fiable et professionnelle. Motivé et rigoureux, je suis toujours enthousiaste à l'idée de contribuer à de nouveaux projets.",
+        "new_skill":"Je suis toujours ravi d'apprendre de nouvelles technologies, dites-moi simplement quelles technologies je devrais connaître pour notre futur projet.",
         "me": "Je suis",
         "location": "situé à Bad Segeberg",
         "relocation": "prêt à déménager.",
@@ -23,16 +24,65 @@
         "description_shopdev": "Une boutique en ligne complète avec authentification, base de données en temps réel et intégration de paiement sécurisée."
     },
     "teamplayer":{
+        "need":"Vous avez besoin d'un joueur d'équipe?",
+        "team_saying":" Voici ce que mes collègues disent de moi",
         "message_1": "<<Travailler avec toi a été un privilège. Ta capacité à décomposer des problèmes complexes en solutions claires et concrètes est quelque chose que j'admire profondément. Tu apporte toujours positivité et professionnalisme à l'équipe.>>",
         "message_2": "<<Merci d'être le genre de développeur qui n'hésite jamais à aider les autres. Que ce soit pour relire du code, échanger des idées ou prodiguer des conseils, tu es toujours présent avec ouverture et bienveillance.>>",
         "message_3":"<<Tu fais partie de ces développeurs qui non seulement écrivent un code excellent, mais qui, en plus, tirent les autres vers le haut. Ta disponibilité pour aider, expliquer et collaborer fluidifie considérablement notre flux de travail.>>"
     },
     "contact":{
-        "contact":"Contactez-moi",
+        "contact":"Contact",
         "about_position": "Je suis à la recherche de nouvelles opportunités en tant que développeur front-end et désireux de contribuer à des projets de qualité, bien conçus. Si vous recherchez une personne qui valorise un code propre et une forte collaboration, n'hésitez pas à me contacter.",
-        "privacy_start": "J'ai lu les ",
+        "privacy_start": "J'ai lu la ",
         "privacy_p" : " et j'accepte le traitement de mes données tel que décrit.",
-        "privacy_link": "politiques de confidentialité",
+        "privacy_link": "politique de confidentialité",
         "send_success": "Merci pour votre message, nous avons bien reçu votre courriel."
+    },
+    "footer":{
+        "role": "Développeur front-end",
+        "legacy": "avis juridique",
+        "privacy":"politique de confidentialité"
+    },
+    "legacy":{
+        "start": "Avis juridique",
+        
+        "accept_terms":{
+            "title": "Clause de non-responsabilité",
+            "content": "Le contenu de ce site web a été élaboré avec le plus grand soin. Toutefois, aucune garantie ne peut être donnée quant à l'exactitude, l'exhaustivité et l'actualité de ce contenu."
+        },
+        "ownership":{
+            "title": "Liens externes:",
+            "content": "Ce site web contient des liens vers des sites web externes appartenant à des tiers. Nous n'avons aucun contrôle sur le contenu de ces sites. Par conséquent, nous déclinons toute responsabilité quant à leur contenu. Les fournisseurs ou exploitants respectifs des sites liés sont toujours responsables de leur contenu."
+            
+        },
+        "proprietary":{
+            "title": "droits d'auteur",
+            "content": " Le contenu et les œuvres créés par les exploitants de ce site web sont soumis au droit d'auteur allemand. Toute reproduction, modification, diffusion ou exploitation, sous quelque forme que ce soit, au-delà des limites du droit d'auteur, nécessite l'autorisation écrite de l'auteur ou du créateur concerné."
+        }
+    },
+    "privacy":{
+        "title":"Politique de Confidentialité",
+        "start": "Coordonnées",
+        "board": "enquête du conseil",
+        "data_collection":{
+            "title": "Collecte et utilisation des données",
+            "content_1":" Nous collectons les données personnelles que vous nous communiquez volontairement lorsque vous nous contactez par courriel. Ces données peuvent inclure votre nom, votre adresse courriel et toute autre information que vous choisissez de partager avec nous. ",
+            "content_2":" Les données recueillies serviront exclusivement à répondre à vos demandes et à vous fournir les informations ou services sollicités. Nous ne partagerons, ne vendrons ni ne distribuerons vos données personnelles à des tiers."
+        },
+        "right_protection":{
+            "title": "Vos droits en matière de protection des données",
+            "content": " Vous avez le droit d'accéder à vos données personnelles que nous conservons, de les rectifier ou de les supprimer. Vous pouvez retirer votre consentement au traitement de vos données à tout moment. Pour exercer ces droits, veuillez nous contacter à l'adresse suivante: "
+        },
+        "cookies":{
+            "content": "Ce site web n'utilise pas de cookies ni d'autres technologies de suivi."
+        },
+        "change_policy":{
+            "title":" Modifications apportées à la présente politique de confidentialité ",
+            "content": "Nous pouvons être amenés à modifier cette politique de confidentialité. Toute modification sera publiée sur cette page, avec la date de la dernière mise à jour. Nous vous invitons à consulter régulièrement cette politique afin de rester informé(e) sur la manière dont nous protégeons vos données."
+        },
+        "update":{
+            "title": "Date de validité",
+            "content": "La présente politique de confidentialité entrera en vigueur le 01 Decembre 2025."
+        }
     }
 }

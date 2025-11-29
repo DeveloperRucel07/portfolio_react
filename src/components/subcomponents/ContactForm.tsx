@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import {z} from 'zod';
 import { useTranslation } from "react-i18next"
-
 const contactedSchema = z.object({
   nameUser: z
     .string()
@@ -15,7 +14,7 @@ const contactedSchema = z.object({
     .string()
     .nonempty({ message: "Email is required" })
     .email({ 
-      pattern:/^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      pattern:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
       message: "Please enter a valid email address" }
     ),
 
@@ -27,7 +26,7 @@ const contactedSchema = z.object({
   agree: z
     .boolean()
     .refine(val => val === true, {
-      message: "You must agree to the terms",
+      message: "You must agree to the privacy terms",
     }),
 });
 
@@ -117,11 +116,14 @@ const ContactForm = () => {
                           required:true
                         })}
                     />
-                    <span className={`checkmark ${errors.agree ? 'outlined-error border-2 border-error' : ''}`} tabIndex={0}></span>
+                    <span className={`checkmark ${ errors.agree? 'outlined-error border-2 border-error' : ''}`} tabIndex={0} role="checkbox" ></span>
             </label>
             <p>{t("contact.privacy_start")}<a className="text-secondary text-bold" href="/privacy-policy">{t("contact.privacy_link")}</a> {t("contact.privacy_p")}</p>
           </div>
-          {errors.agree && <p className="text-sm text-error">{errors.agree?.message}</p>}
+          <div className="h-4" role="alert">
+            {errors.agree && <p className="text-sm text-error">{errors.agree?.message}</p>}
+          </div>
+          
         </div>
         <div className="flex flex-col justify-center md:flex-row items-center md:justify-between w-full">
           <div className=''>
@@ -130,7 +132,7 @@ const ContactForm = () => {
             </p>
             
           </div>
-          <button type="submit" className={`flex items-center justify-center border-2 ${!isValid? ' border-gray-600 text-gray-600': 'border-secondary text-secondary'} w-32 h-12 `} disabled = {!isValid}>
+          <button type="submit" className={`flex items-center justify-center border-2 ${!isValid? ' border-gray-600 text-gray-600': 'border-secondary text-secondary cursor-pointer'} w-32 h-12 `} disabled = {!isValid}>
             Send
           </button>
         </div>

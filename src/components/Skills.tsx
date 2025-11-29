@@ -11,8 +11,9 @@ import react from '../assets/icons/react.png';
 import scrum from '../assets/icons/scrum.png';
 import minset from '../assets/icons/minset.png';
 import corner_down from '../assets/icons/corner_down.png';
-
+import { useTranslation } from "react-i18next"
 const Skills = () => {
+    const {t} = useTranslation();
   return (
     <section className='flex flex-col items-center md:items-start gap-10  w-full pt-20 md:pt-20 mb-20 md:mt-20 mr-2 ml-2' id='skills'>
         <h3 className='font-bold text-5xl md:text-6xl lg:text-8xl text-secondary mt-5 mb-5 text-center  md:text-start'>My Skills</h3>
@@ -69,7 +70,7 @@ const Skills = () => {
         <div className='flex flex-col items-center md:hidden'>
             <img className='h-20 w-8 animate-pulse' src={corner_down} alt="" />
             <p className='p-3'>
-                I am always happy to learn new technologies,just tell me which technologie should i need to know for our future Project.
+                {t("whyme.new_skill")}
             </p>
             <div className='flex items-center justify-center md:justify-end md:pr-10 p-6 m-4'>
                 <a href='#contact' className='flex items-center justify-center w-[175px] h-12 border-2 border-secondary text-center bg-secondary text-md font-bold' >
