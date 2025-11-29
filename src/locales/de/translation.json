@@ -11,10 +11,28 @@
     },
     "whyme":{
         "whyme": "Warum ich",
-        "aboutme": "Beschreiben Sie einige IT-bezogene Informationen über sich. Warum begeistert Sie das Programmieren? Beschreiben Sie Ihre Motivation für berufliche Weiterentwicklung und kontinuierliches Lernen. Betonen Sie Ihre ausgeprägten Problemlösungsfähigkeiten und Ihre Leidenschaft für das Programmieren.",
+        "aboutme": "Als Frontend-Entwickler schreibe ich sauberen, effizienten Code. Ich habe ein ausgeprägtes Gespür für Benutzerfreundlichkeit und eine ausgeprägte Teamorientierung. Mir ist es wichtig, intuitive und ansprechende Benutzeroberflächen zu entwickeln, und ich liefere stets qualitativ hochwertige Arbeit zuverlässig und professionell. Ich bin motiviert, detailorientiert und freue mich immer darauf, mich in neue Projekte einzubringen.",
         "me": "Ich bin",
         "location": "befinde mich in Bad Segeberg.",
         "relocation": "offen für einen Umzug.",
         "remote": "offen für Remote-Arbeit."
+    },
+    "projects":{
+        "description_join": "Task manager, inspiriert vom Kanban-System. Aufgaben per Drag & Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.",
+        "description_sharkie": "Ein simples Jump-’n’-Run-Spiel, basierend auf objektorientierter Programmierung. Hilf Sharkie, die Münzen und Giftflaschen zu finden, um den Killerwal zu       bekämpfen und den Ozean zu schützen.",
+        "description_shopdev": "Ein vollständiger E-Commerce-Shop mit Authentifizierung, Echtzeitdatenbank und sicherer Zahlungsabwicklung."
+    },
+    "teamplayer":{
+        "message_1": "‘’Die Zusammenarbeit mit dir war mir eine Ehre. Deine Fähigkeit, komplexe Probleme in klare, umsetzbare Lösungen zu zerlegen, bewundere ich sehr. Du bringst stets positive Energie und Professionalität ins Team ein.‘’",
+        "message_2": "‘’Vielen Dank, dass du als Entwickler stets hilfsbereit bist und andere unterstützen. Ob Code-Reviews, Brainstorming oder Mentoring, du zeigst dich immer offen und engagiert.‘’",
+        "message_3":"‘’Du gehörst zu den Entwicklern, die nicht nur exzellenten Code schreiben, sondern auch alle um sich herum inspirieren. Deine Hilfsbereitschaft, dein Verständnis für Sachverhalte und deine Kooperationsbereitschaft tragen zu einem reibungsloseren Arbeitsablauf bei.‘’"
+    },
+    "contact":{
+        "contact":"Kontakt",
+        "about_position": "Ich bin offen für neue Herausforderungen als Frontend-Entwickler und möchte gerne zu gut gestalteten, qualitativ hochwertigen Projekten beitragen. Wenn Sie jemanden suchen, der Wert auf sauberen Code und gute Zusammenarbeit legt, melden Sie sich gerne.",
+        "privacy_start": "Ich habe gelesen ",
+        "privacy_p" : " und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "privacy_link": "Datenschutzrichtlinie",
+        "send_success": "Vielen Dank für Ihre Nachricht, wir haben Ihre E-Mail erhalten."
     }
 }

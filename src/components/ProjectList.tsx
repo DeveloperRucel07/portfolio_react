@@ -1,6 +1,7 @@
 import ProjectDetail from "./subcomponents/ProjectDetail";
 import project_join from '../assets/images/project_join.png';
 import project_sharkie from '../assets/images/project_sharkie.png';
+import { useTranslation } from "react-i18next"
 
 export type Project ={
   title:string,
@@ -12,12 +13,13 @@ export type Project ={
 }
 
 const ProjectList = () => {
+
+  const {t} = useTranslation();
   const projectLists:Project[]= [
    {
       title: "Join",
       technologie: ["JavaScript", "Firebase", "HTML", "CSS"],
-      about:
-        "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      about:t("projects.description_join"),
       imageUrl: project_join,
       gitGubLink: "https://github.com/DeveloperRucel07/Join",
       projectLink: "https://join.rucel-tsafack.com/index.html",
@@ -25,8 +27,7 @@ const ProjectList = () => {
     {
       title: "Sharkie",
       technologie: ["OOP", "JavaScript", "HTML", 'CSS'],
-      about:
-        "A simple jump-and-run game based on object-oriented programming. Help Sharkie find the coins and poison bottles to fight the killer whale and protect the ocean.",
+      about: t("projects.description_sharkie"),
       imageUrl: project_sharkie,
       gitGubLink: "https://github.com/DeveloperRucel07/sharkie",
       projectLink: "https://sharkie.rucel-tsafack.com/index.html",
@@ -34,8 +35,7 @@ const ProjectList = () => {
     {
       title: "ShopDev",
       technologie: ["Angular", "TypeScript", "Tailwind CSS", "Material Design", "SCSS"],
-      about:
-        "A complete e-commerce store with authentication, real-time database, and secure payment integration.",
+      about:t("projects.description_shopdev"),
       imageUrl: project_join,
       gitGubLink: "https://github.com/DeveloperRucel07/shopdev",
       projectLink: "https://shopdev.rucel-tsafack.com/index.html",
