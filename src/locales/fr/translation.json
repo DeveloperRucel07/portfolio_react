@@ -1,0 +1,20 @@
+{
+    "header": {
+        "whyme": "Pourquoi moi",
+        "skills":"Compétences",
+        "project": "Projets",
+        "contact":"Contact"
+    },
+    "landing": {
+        "contact": "Contactez-moi",
+        "title": "Développeur front-end"
+    },
+    "whyme":{
+        "whyme": "Pourquoi moi",
+        "aboutme": "Décrivez votre parcours professionnel en lien avec l'informatique. Pourquoi êtes-vous passionné(e) par la programmation? Mettez en avant votre motivation pour le développement professionnel et l'apprentissage continu. Soulignez vos excellentes compétences en résolution de problèmes et votre passion pour le développement.",
+        "me": "Je suis",
+        "location": "situé à Bad Segeberg",
+        "relocation": "prêt à déménager.",
+        "remote": "ouvert au télétravail"
+    }
+}
