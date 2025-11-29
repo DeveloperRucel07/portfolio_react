@@ -11,10 +11,28 @@
     },
     "whyme":{
         "whyme": "Pourquoi moi",
-        "aboutme": "Décrivez votre parcours professionnel en lien avec l'informatique. Pourquoi êtes-vous passionné(e) par la programmation? Mettez en avant votre motivation pour le développement professionnel et l'apprentissage continu. Soulignez vos excellentes compétences en résolution de problèmes et votre passion pour le développement.",
+        "aboutme": "En tant que développeur front-end, je produis un code propre et performant. J'ai un sens aigu de l'ergonomie et je suis un collaborateur impliqué. Le développement d'interfaces utilisateur intuitives et attrayantes est primordial pour moi, et je fournis systématiquement un travail de haute qualité, de manière fiable et professionnelle. Motivé et rigoureux, je suis toujours enthousiaste à l'idée de contribuer à de nouveaux projets.",
         "me": "Je suis",
         "location": "situé à Bad Segeberg",
         "relocation": "prêt à déménager.",
         "remote": "ouvert au télétravail"
+    },
+    "projects":{
+        "description_join": "Gestionnaire de tâches inspiré du système Kanban. Créez et organisez des tâches par simple glisser-déposer, assignez des utilisateurs et des catégories.",
+        "description_sharkie": "Un jeu de plateforme simple basé sur la programmation orientée objet. Aidez Sharkie à trouver les pièces et les fioles de poison pour combattre l'orque et protéger l'océan.",
+        "description_shopdev": "Une boutique en ligne complète avec authentification, base de données en temps réel et intégration de paiement sécurisée."
+    },
+    "teamplayer":{
+        "message_1": "<<Travailler avec toi a été un privilège. Ta capacité à décomposer des problèmes complexes en solutions claires et concrètes est quelque chose que j'admire profondément. Tu apporte toujours positivité et professionnalisme à l'équipe.>>",
+        "message_2": "<<Merci d'être le genre de développeur qui n'hésite jamais à aider les autres. Que ce soit pour relire du code, échanger des idées ou prodiguer des conseils, tu es toujours présent avec ouverture et bienveillance.>>",
+        "message_3":"<<Tu fais partie de ces développeurs qui non seulement écrivent un code excellent, mais qui, en plus, tirent les autres vers le haut. Ta disponibilité pour aider, expliquer et collaborer fluidifie considérablement notre flux de travail.>>"
+    },
+    "contact":{
+        "contact":"Contactez-moi",
+        "about_position": "Je suis à la recherche de nouvelles opportunités en tant que développeur front-end et désireux de contribuer à des projets de qualité, bien conçus. Si vous recherchez une personne qui valorise un code propre et une forte collaboration, n'hésitez pas à me contacter.",
+        "privacy_start": "J'ai lu les ",
+        "privacy_p" : " et j'accepte le traitement de mes données tel que décrit.",
+        "privacy_link": "politiques de confidentialité",
+        "send_success": "Merci pour votre message, nous avons bien reçu votre courriel."
     }
 }

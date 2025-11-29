@@ -11,10 +11,28 @@
     },
     "whyme":{
         "whyme": "Why me",
-        "aboutme": "Write some information about yourself that is IT related. Why are you passionate about coding? Highlight your motivation for professional growth and continuous learning. Emphasise your strong problem-solving skills and passion for coding.",
+        "aboutme": "As a frontend developer, I bring clean, efficient code, a strong eye for user experience, and a genuinely collaborative mindset. I care about building interfaces that feel intuitive and look polished, and I’m committed to delivering high-quality work with reliability and professionalism. I’m motivated, detail-oriented, and always ready to contribute to new projects",
         "me": "I am",
         "location": "located in Bad Segeberg",
         "relocation": "open to relocated",
         "remote": "open to work remote"
+    },
+    "projects":{
+        "description_join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "description_sharkie": "A simple jump-and-run game based on object-oriented programming. Help Sharkie find the coins and poison bottles to fight the killer whale and protect the ocean.",
+        "description_shopdev": "A complete e-commerce store with authentication, real-time database, and secure payment integration."
+    },
+    "teamplayer":{
+        "message_1": "‘’Working with you has been a privilege. You ability to break down complex problems into clear, actionable solutions is something I admire deeply. You always bring positivity and professionalism to the team‘’",
+        "message_2": "‘’Thank you for being the kind of developer who never hesitates to support others. Whether it's reviewing code, brainstorming ideas, or mentoring, you always show up with openness and care.‘’",
+        "message_3":"‘’You’re one of those developers who not only writes excellent code but also elevates everyone around you. Your willingness to help, explain, and collaborate makes our entire workflow smoother.‘’"
+    },
+    "contact":{
+        "contact":"Contact me",
+        "about_position": "I’m open to new opportunities as a frontend developer and eager to contribute to well-designed, high-quality projects. If you’re looking for someone who values clean code and strong collaboration, feel free to reach out.",
+        "privacy_start": "I've read ",
+        "privacy_p" : "and agree to the processing of my data as outlined.",
+        "privacy_link": "privacy policy",
+        "send_success": "Thank you for your Message, We have received your email."
     }
 }

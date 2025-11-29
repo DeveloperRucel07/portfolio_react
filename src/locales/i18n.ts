@@ -4,7 +4,6 @@ import translationEN from './en/translation.json';
 import translationDE from './de/translation.json';
 import translationFR from './fr/translation.json';
 
-const savedLanguage = localStorage.getItem('language') || 'en'
 const resources = {
   en: {
     translation: translationEN
@@ -17,12 +16,19 @@ const resources = {
   }
 };
 
+const getInitialLanguage = () => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+        return localStorage.getItem('language') || 'en';
+    }
+    return 'en';
+};
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
     fallbackLng: 'en',
-    lng: savedLanguage,
+    lng: getInitialLanguage(),
     interpolation: {
       escapeValue: false
     }

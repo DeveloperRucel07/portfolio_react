@@ -1,5 +1,6 @@
 import team_arrow from '../assets/icons/team_arrow.png';
 import Testimoni from './subcomponents/Testimoni';
+import { useTranslation } from "react-i18next"
 
 export type TestimoniMessage ={
   developer:string,
@@ -7,22 +8,23 @@ export type TestimoniMessage ={
   message:string,
 }
 const Teamplayer = () => {
+  const {t} = useTranslation();
 
   const testimonies: TestimoniMessage[] = [
     {
       developer: "Tino Wulf",
       projectName: "Project Join",
-      message: "‘’ Marcus had to develop, format and deliver content in collaboration with the team members.He is a reliable and friendly person. ’’",
+      message: t("teamplayer.message_1"),
     },
     {
       developer: "Andreas Brem",
       projectName: "Project Kockwelt",
-      message: "‘’ He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code. ‘’",
+      message:  t("teamplayer.message_2"),
     },
     {
       developer: "Jeremy Nánási",
       projectName: "Project Join",
-      message: "‘’ He is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague. ’’",
+      message:  t("teamplayer.message_3"),
     },
   ]
 

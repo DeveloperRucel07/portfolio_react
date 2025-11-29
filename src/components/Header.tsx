@@ -30,11 +30,11 @@ const Header = () => {
                 <li className='text-lg md:text-xl xl:text-2xl'><a href="/#contact" className='hover:text-secondary' onClick={() => setIsOpen(false)}>{t("header.contact")}</a></li>
             </ul>
             <div className=' flex gap-2 items-center justify-center text-xl px-4' onClick={() => setIsOpen(false)}>
-                <span className='hover:text-secondary font-extrabold' tabIndex={0} onClick={()=> changeLangauge("de")}>DE</span>
+                <span className={`hover:text-error font-extrabold ${i18n.language === "de" ? "text-error" : ''} cursor-pointer`} tabIndex={0} onClick={()=> changeLangauge("de")}>DE</span>
                 |
-                <span className='hover:text-secondary font-extrabold' tabIndex={0} onClick={()=> changeLangauge("en")}>EN</span>
+                <span className={`hover:text-error font-extrabold ${i18n.language === "en" ? "text-error" : ''} cursor-pointer`} tabIndex={0} onClick={()=> changeLangauge("en")}>EN</span>
                 |
-                <span className='hover:text-secondary font-extrabold' tabIndex={0} onClick={()=> changeLangauge("fr")}>FR</span>
+                <span className={`hover:text-error font-extrabold ${i18n.language === "fr" ? "text-error" : ''} cursor-pointer`} tabIndex={0} onClick={()=> changeLangauge("fr")}>FR</span>
             </div> 
         </nav>
         

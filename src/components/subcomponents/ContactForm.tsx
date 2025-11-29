@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import {z} from 'zod';
+import { useTranslation } from "react-i18next"
 
 const contactedSchema = z.object({
   nameUser: z
@@ -35,6 +36,8 @@ const contactedSchema = z.object({
 type Contacted  = z.infer<typeof contactedSchema>
 
 const ContactForm = () => {
+  const {t} = useTranslation();
+
   const {register  , handleSubmit, formState:{errors, isValid}, reset:resetForm} = useForm<Contacted>({
     resolver: zodResolver(contactedSchema),
     mode: "onTouched",
@@ -116,15 +119,14 @@ const ContactForm = () => {
                     />
                     <span className={`checkmark ${errors.agree ? 'outlined-error border-2 border-error' : ''}`} tabIndex={0}></span>
             </label>
-
-            <p>I've read <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
+            <p>{t("contact.privacy_start")}<a className="text-secondary text-bold" href="/privacy-policy">{t("contact.privacy_link")}</a> {t("contact.privacy_p")}</p>
           </div>
           {errors.agree && <p className="text-sm text-error">{errors.agree?.message}</p>}
         </div>
         <div className="flex flex-col justify-center md:flex-row items-center md:justify-between w-full">
           <div className=''>
             <p className={`${submitting ? 'text-secondary text-xl': 'hidden'}`}>
-              We have receive your email.
+              {t("contact.send_success")}
             </p>
             
           </div>
