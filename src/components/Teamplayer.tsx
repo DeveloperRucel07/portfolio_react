@@ -36,7 +36,7 @@ const Teamplayer = () => {
         <img className='hidden sm:block items-center justify-center w-22 h-20' src={team_arrow} alt="" />
         <div className='team-player flex flex-row items-start justify-start pt-2 md:snap-none snap-x snap-mandatory touch-auto w-auto scroll-smooth overflow-x-scroll md:overflow-x-hidden'>
           {testimonies.map((testimoni, index)=>( 
-            <Testimoni testimoni={testimoni} key={index} ></Testimoni>
+            <Testimoni testimoni={testimoni} index={index} key={index} ></Testimoni>
           ))}
         </div>
       </div>

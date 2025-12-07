@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import {z} from 'zod';
 import { useTranslation } from "react-i18next"
+import { motion } from 'motion/react'
 const contactedSchema = z.object({
   nameUser: z
     .string()
@@ -73,7 +74,13 @@ const ContactForm = () => {
   return (
     <form className="w-full flex flex-col p-2 gap-4" onSubmit={handleSubmit(onSubmit)}>
       <div className="input-forms flex flex-col md:flex-row items-center justify-center w-full gap-10">
-        <div className="flex flex-col items-center justify-center gap-10 w-full md:w-[50%]">
+        <motion.div 
+          initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+        
+        className="flex flex-col items-center justify-center gap-10 w-full md:w-[50%]">
           <label htmlFor="nameUser" className=" w-full h-12 relative">
             <input type="text" className="border border-secondary w-full h-full pl-4 pr-10"
 
@@ -91,8 +98,14 @@ const ContactForm = () => {
             type="text" name="emailUser" className="border border-secondary w-full h-full pl-4 pr-10"/>
             {errors.emailUser?.type ==="required" ? <p className="text-sm text-error">Your email is Required</p> : <p className="text-sm text-error">{errors.emailUser?.message}</p> }
           </label>
-        </div>
-        <div className="w-full md:w-[50%] h-35">
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7 }}
+            
+        className="w-full md:w-[50%] h-35">
             <textarea
             {...register("messageUser", {
               required:true,
@@ -102,7 +115,7 @@ const ContactForm = () => {
             {errors.messageUser?.type==="required" ? <p className="text-sm text-error">Your Message is Required</p>
             : <p className="text-sm text-error">{errors.messageUser?.message}</p>
           }
-        </div>
+        </motion.div>
         
       </div>
       <div className="privacy flex flex-col justify-between w-full pt-4 gap-6">

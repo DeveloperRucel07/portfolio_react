@@ -2,6 +2,7 @@ import '../css/landing.css'
 import imageLanding from '../assets/images/rucel_image_1.png'
 import downPrimary from '../assets/icons/down_primary.png'
 import { useTranslation } from "react-i18next"
+import { motion } from 'motion/react'
 const Landing = () => {
     const {t} = useTranslation();
   return (
@@ -24,10 +25,16 @@ const Landing = () => {
                 </div>
                 
             </div>
-            <div className="landing-text flex flex-col items-center md:items-start  justify-center text-secondary h-30 md:h-80 gap-4">
+            <motion.div 
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+                className="landing-text flex flex-col items-center md:items-start  justify-center text-secondary h-30 md:h-80 gap-4"
+                >
                 <h3 className='font-medium text-2xl md:text-3xl lg:text-4xl uppercase'>{t("landing.title")}</h3>
                 <h2 className='font-bold text-4xl md:text-5xl lg:text-7xl '>Rucel Tsafack</h2>
-            </div>
+            </motion.div>
         </div> 
         <div className="image-section w-full md:w-[55%] flex items-center justify-center h-120 md:h-full">
             <div className='flex items-center justify-center w-full'>

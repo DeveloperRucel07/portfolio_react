@@ -7,6 +7,7 @@ import location from '../assets/icons/location.png';
 import relocated from '../assets/icons/relocated.png';
 import remote from '../assets/icons/remote.png';
 import { useTranslation } from "react-i18next"
+import { motion } from 'motion/react'
 const Whyme = () => {
     const {t} = useTranslation();
   return (
@@ -22,7 +23,13 @@ const Whyme = () => {
             <div className='flex md:hidden p-2'>
                 <img src={left} alt="" />
             </div>
-            <div className='items-start flex flex-col text-lg md:text-xl md:flex-row justify-center gap-6 w-full'>
+            <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            
+            className='items-start flex flex-col text-lg md:text-xl md:flex-row justify-center gap-6 w-full'>
                 <h4 className='font-bold text-3xl md:text-5xl text-secondary mt-5 mb-5 w-50 text-center md:w-80'>{t('whyme.me')}</h4>
                 <section className="situation flex flex-col w-full">
                     <div className='flex flex-row items-center justify-start text-lg p-4 gap-4'>
@@ -51,7 +58,7 @@ const Whyme = () => {
                     </div>
                         
                 </section>
-            </div>
+            </motion.div>
             <div className='md:flex hidden items-end justify-end h-10 '>
                 <img className='h-15' src={arrow_snake} alt="arrow down right" />
             </div>

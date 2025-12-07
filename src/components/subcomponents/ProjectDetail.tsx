@@ -1,4 +1,5 @@
 import type { Project } from '../ProjectList';
+import { motion } from 'motion/react'
 
 type ProjectDetailProps = {
     index: number,
@@ -11,7 +12,15 @@ const ProjectDetail = ( {index, project}: ProjectDetailProps) => {
     }
 
   return (
-    <div className={`flex flex-col-reverse ${isEven(index) ? 'md:flex-row': 'md:flex-row-reverse'}  items-center justify-center w-full md:h-80 gap-6`}>
+    <motion.div 
+
+    initial={{ opacity: 0, y: -100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.2 + 0.3 }}
+    
+    
+    className={`flex flex-col-reverse ${isEven(index) ? 'md:flex-row': 'md:flex-row-reverse'}  items-center justify-center w-full md:h-80 gap-6`}>
         <div className="flex items-center flex-col justify-center h-full w-full md:w-[45%]">
             <img className='object-cover h-full w-full rounded-md md:rounded-none' src={project.imageUrl} alt="image project" />
             <div className='flex flex-row items-center justify-evenly w-full pt-4 md:hidden'>
@@ -42,7 +51,7 @@ const ProjectDetail = ( {index, project}: ProjectDetailProps) => {
                 </a> 
             </div>
         </div>  
-    </div>
+    </motion.div>
   )
 }
 

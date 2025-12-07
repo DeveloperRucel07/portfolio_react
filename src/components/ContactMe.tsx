@@ -3,6 +3,7 @@ import up_primary from '../assets/icons/up_primary.png';
 import ContactForm from './subcomponents/ContactForm';
 import ContactLink from './subcomponents/ContactLink';
 import { useTranslation } from "react-i18next"
+import { motion } from 'motion/react'
 const ContactMe = () => {
     const {t} = useTranslation();
   return (
@@ -12,13 +13,25 @@ const ContactMe = () => {
             <img className='flex w-20 h-10 items-end' src={contact_corner} alt="contact corner" />
         </h3>
         <div className='flex flex-col md:flex-row items-center justify-between w-full gap-10'>
-            <p className='w-full md:w-[50%]'>{t("contact.about_position")}</p>
-            <div className='hidden md:flex flex-row items-center justify-between w-full md:w-[50%]' >
+            <motion.p 
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            
+            className='w-full md:w-[50%]'>{t("contact.about_position")}</motion.p>
+            <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            
+            className='hidden md:flex flex-row items-center justify-between w-full md:w-[50%]' >
                 <ContactLink></ContactLink>
                 <a href='#landing' className=''>
                     <img className='w-10 h-10 animate-bounce duration-150' src={up_primary} alt="up" />
                 </a>
-            </div>
+            </motion.div>
         </div>
 
         <ContactForm></ContactForm>

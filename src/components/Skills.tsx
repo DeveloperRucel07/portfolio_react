@@ -12,60 +12,124 @@ import scrum from '../assets/icons/scrum.png';
 import minset from '../assets/icons/minset.png';
 import corner_down from '../assets/icons/corner_down.png';
 import { useTranslation } from "react-i18next"
+import { motion } from 'motion/react'
 const Skills = () => {
     const {t} = useTranslation();
   return (
     <section className='flex flex-col items-center md:items-start gap-10  w-full pt-20 md:pt-20 mb-20 md:mt-20 mr-2 ml-2' id='skills'>
         <h3 className='font-bold text-5xl md:text-6xl lg:text-8xl text-secondary mt-5 mb-5 text-center  md:text-start'>My Skills</h3>
         <ul className="skills grid grid-cols-3 md:grid-cols-6 w-full gap-8">
-            <li className='flex flex-col items-center justify-center  gap-2'>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            
+            className='flex flex-col items-center justify-center  gap-2'>
                 <img className='hover:animate-bounce' src={angular} alt="angular"/>
                 <p className='hidden md:block text-secondary'>Angular</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-bounce' src={typescript} alt="angular"/>
                 <p className='hidden md:block text-secondary'>Typescript</p>
-            </li>
-            <li className='flex flex-col items-center justify-center  gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            
+            className='flex flex-col items-center justify-center  gap-2'>
                 <img className='hover:animate-spin' src={react} alt="react"/>
                 <p className='hidden md:block text-secondary'>React</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-bounce' src={javascript} alt="JavaScript"/>
                 <p className='hidden md:block text-secondary'>JavaScript</p>
-            </li>
-            <li className='flex flex-col items-center justify-center  gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7 }}
+            className='flex flex-col items-center justify-center  gap-2'>
                 <img className='hover:animate-bounce' src={css} alt="css"/>
                 <p className='hidden md:block text-secondary'>CSS</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.8 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-bounce' src={html} alt="html"/>
                 <p className='hidden md:block text-secondary'>HTML</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.9 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-spin' src={api} alt="api"/>
                 <p className='hidden md:block text-secondary'>REST-API</p>
-            </li>
-            <li className='flex flex-col items-center justify-center  gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1.0 }}
+            className='flex flex-col items-center justify-center  gap-2'>
                 <img className='hover:animate-bounce' src={firebase} alt="firebase"/>
                 <p className='hidden md:block text-secondary'>Firebase</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1.1 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-bounce' src={git} alt="git"/>
                 <p className='hidden md:block text-secondary'>Git</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1.2 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-bounce' src={scrum} alt="scrum"/>
                 <p className='hidden md:block text-secondary'>Scrum</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1.3 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2'>
                 <img className='hover:animate-bounce' src={material} alt="material design"/>
                 <p className='hidden md:block text-secondary'>Material design</p>
-            </li>
-            <li className='flex flex-col items-center justify-center w-[100%/6] gap-2 text-primaryy'>
+            </motion.li>
+            <motion.li 
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1.4 }}
+            className='flex flex-col items-center justify-center w-[100%/6] gap-2 text-primaryy'>
                 <img className='hover:animate-spin animate-bounce w-15' src={minset} alt="angular"/>
-                <p className='hidden md:block text-secondary'>Mindset</p>
-            </li>
+                <p className='hidden md:block text-error font-extrabold animate-pulse'>Mindset</p>
+            </motion.li>
         </ul>
         <div className='flex flex-col items-center md:hidden'>
             <img className='h-20 w-8 animate-pulse' src={corner_down} alt="" />
